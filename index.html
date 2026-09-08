@@ -48,7 +48,32 @@
     font-size: 13px; font-weight: 500; transition: color 0.2s;
   }
   .nav-links a:hover{ color: var(--gold); }
+  .nav-right{ display: flex; align-items: center; gap: 28px; }
   @media (max-width: 640px){ .nav-links{ display: none; } }
+
+  /* ---------- CTA buttons ---------- */
+  .btn-cta{
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'DM Sans', sans-serif; font-weight: 600;
+    text-decoration: none; border-radius: 100px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .btn-cta.primary{
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+    color: #17130a;
+    padding: 15px 30px; font-size: 15px;
+    box-shadow: 0 8px 24px rgba(212,160,23,0.22);
+  }
+  .btn-cta.primary:hover{ transform: translateY(-2px); box-shadow: 0 12px 28px rgba(212,160,23,0.32); }
+  .btn-cta.small{
+    background: rgba(212,160,23,0.1); border: 1px solid rgba(212,160,23,0.4);
+    color: var(--gold); padding: 8px 18px; font-size: 13px;
+  }
+  .btn-cta.small:hover{ background: rgba(212,160,23,0.18); }
+  .btn-cta .arrow{ transition: transform 0.2s; }
+  .btn-cta:hover .arrow{ transform: translateX(3px); }
+  .hero-cta{ margin-bottom: 44px; }
 
   /* ---------- Hero ---------- */
   .hero{
@@ -243,16 +268,22 @@
 
 <nav>
   <a class="nav-brand" href="#"><span>CEU San Pablo</span><span class="sep">×</span><span>Nova</span></a>
-  <ul class="nav-links">
-    <li><a href="#agenda">Agenda</a></li>
-    <li><a href="#firmas">Firmas</a></li>
-  </ul>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#firmas">Firmas</a></li>
+    </ul>
+    <a class="btn-cta small" href="https://novatalent.typeform.com/to/TLXmee3S" target="_blank" rel="noopener">Aplicar ahora</a>
+  </div>
 </nav>
 
 <div class="hero">
   <div class="hero-eyebrow"><div class="dot"></div>Talentum Business · Curso 2026/27</div>
   <h1>Banca de <span class="gold">Inversión</span></h1>
   <p class="hero-sub"><strong>¿Listo/a para dar el primer paso hacia tu futuro en Banca de Inversión?</strong> Aplica al IB Talentum Business Program | NOVA x CEU, aprende directamente de profesionales del sector, descubre cómo funciona la industria desde dentro y empieza a construir tu camino hacia una carrera en Investment Banking.</p>
+  <div class="hero-cta">
+    <a class="btn-cta primary" href="https://novatalent.typeform.com/to/TLXmee3S" target="_blank" rel="noopener">Aplicar ahora<span class="arrow">→</span></a>
+  </div>
   <div class="hero-stats">
     <div class="hero-stat"><div class="n">16h</div><div class="l">Formación total</div></div>
     <div class="hero-divider"></div>

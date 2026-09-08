@@ -75,6 +75,24 @@
   .btn-cta:hover .arrow{ transform: translateX(3px); }
   .hero-cta{ margin-bottom: 44px; }
 
+  /* ---------- Closing CTA ---------- */
+  .cta-close{
+    text-align: center; padding: 84px 40px;
+    position: relative; overflow: hidden;
+  }
+  .cta-close::before{
+    content: '';
+    position: absolute; top: -160px; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 500px;
+    background: radial-gradient(circle, rgba(212,160,23,0.1) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .cta-close .container{ position: relative; }
+  .cta-close .section-label{ display: block; }
+  .cta-close .section-title{ margin: 0 auto 14px; }
+  .cta-close .section-sub{ margin: 0 auto 36px; }
+  @media (max-width: 640px){ .cta-close{ padding: 64px 22px; } }
+
   /* ---------- Hero ---------- */
   .hero{
     display: flex; flex-direction: column; align-items: flex-start;
@@ -113,6 +131,13 @@
     position: relative;
   }
   .hero-sub strong{ color: var(--text-primary); font-weight: 600; }
+  .hero-question{
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(17px, 1.7vw, 20px);
+    font-weight: 600; color: var(--text-primary);
+    max-width: 640px; line-height: 1.4;
+    margin-bottom: 18px; position: relative;
+  }
   .hero-stats{ display: flex; align-items: center; gap: 32px; flex-wrap: wrap; position: relative; }
   .hero-stat{ text-align: left; }
   .hero-stat .n{
@@ -280,7 +305,8 @@
 <div class="hero">
   <div class="hero-eyebrow"><div class="dot"></div>Talentum Business · Curso 2026/27</div>
   <h1>Banca de <span class="gold">Inversión</span></h1>
-  <p class="hero-sub"><strong>¿Listo/a para dar el primer paso hacia tu futuro en Banca de Inversión?</strong> Aplica al IB Talentum Business Program | NOVA x CEU, aprende directamente de profesionales del sector, descubre cómo funciona la industria desde dentro y empieza a construir tu camino hacia una carrera en Investment Banking.</p>
+  <p class="hero-question">¿Listo/a para dar el primer paso hacia tu futuro en Banca de Inversión?</p>
+  <p class="hero-sub">Aplica al IB Talentum Business Program | NOVA x CEU, aprende directamente de profesionales del sector, descubre cómo funciona la industria desde dentro y empieza a construir tu camino hacia una carrera en Investment Banking.</p>
   <div class="hero-cta">
     <a class="btn-cta primary" href="https://novatalent.typeform.com/to/TLXmee3S" target="_blank" rel="noopener">Aplicar ahora<span class="arrow">→</span></a>
   </div>
@@ -460,9 +486,18 @@
   </div>
 </section>
 
+<section class="cta-close">
+  <div class="container fade-in">
+    <span class="section-label">Plazas limitadas</span>
+    <h2 class="section-title">¿Empezamos?</h2>
+    <p class="section-sub">Aplica ahora al IB Talentum Business Program y da el primer paso hacia tu carrera en Investment Banking.</p>
+    <a class="btn-cta primary" href="https://novatalent.typeform.com/to/TLXmee3S" target="_blank" rel="noopener">Aplicar ahora<span class="arrow">→</span></a>
+  </div>
+</section>
+
 <footer>
   <div class="footer-brand">Talentum Business — CEU San Pablo × Nova</div>
-  <div class="footer-right">Track: Banca de Inversión · Curso 2026/27</div>
+  <div class="footer-right">IB Talentum Business Program · Curso 2026/27</div>
 </footer>
 
 <script>

@@ -178,6 +178,23 @@
     max-width: 620px; line-height: 1.6;
   }
 
+  /* ---------- Bank tags ---------- */
+  .bank-tags{
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-top: 24px;
+  }
+  .bank-tag{
+    font-family: 'DM Sans', sans-serif; font-weight: 600;
+    font-size: 13px; color: var(--text-secondary);
+    background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+    border-radius: 100px; padding: 7px 16px;
+  }
+  .banks-disclaimer{
+    font-size: 12px; color: var(--text-muted);
+    margin-top: 14px; line-height: 1.5; font-style: italic;
+    max-width: 620px;
+  }
+
   /* ---------- Agenda accordion ---------- */
   .sessions-block{ margin-top: 40px; }
   .sessions-block-label{
@@ -373,7 +390,17 @@
     <div class="fade-in">
       <span class="section-label">Tu agenda</span>
       <h2 class="section-title">Seis sesiones, presenciales</h2>
-      <p class="section-sub">Pre‑work en vídeo en la plataforma de Nova antes de cada sesión. Toca cada sesión para ver el contenido completo.</p>
+      <p class="section-sub">Dominio técnico y preparación completa para entrar como Analyst en los mejores bancos de inversión del mundo. Toca cada sesión para ver el contenido completo.</p>
+      <div class="bank-tags">
+        <span class="bank-tag">J.P. Morgan</span>
+        <span class="bank-tag">Morgan Stanley</span>
+        <span class="bank-tag">Goldman Sachs</span>
+        <span class="bank-tag">Citi</span>
+        <span class="bank-tag">Deutsche Bank</span>
+        <span class="bank-tag">Rothschild</span>
+        <span class="bank-tag">Lazard</span>
+      </div>
+      <p class="banks-disclaimer">* Ejemplos de bancos de referencia. Los profesionales del programa son banqueros y ex-banqueros de bulge brackets y boutiques; Nova no garantiza representación de entidades específicas.</p>
     </div>
 
     <div class="sessions-block fade-in">
